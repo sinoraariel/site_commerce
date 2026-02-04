@@ -1,0 +1,56 @@
+import Darkmode from './src/components/Navbar/DarkMode';
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode:"class",
+  content: [
+    
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    
+  ],
+  theme: {
+    extend: {
+      colors:{
+        primary:"#fea928",
+        secondary:"#ed8900",
+        neutral: {
+          50: '#fafafa',
+          100: '#f5f5f5',
+          200: '#e5e5e5',
+          300: '#d4d4d4',
+          400: '#a3a3a3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
+          950: '#0a0a0a',
+        },
+        accent: {
+        50:  "#ecfdf5",
+        100: "#d1fae5",
+        200: "#a7f3d0",
+        300: "#6ee7b7",
+        400: "#34d399",
+        500: "#10b981", // couleur principale accent
+        600: "#059669",
+        700: "#047857",
+        800: "#065f46",
+        900: "#064e3b",
+      },
+      },
+      fontFamily: {
+      serifAlt: ['"DM Serif Display"', 'serif'],
+    },
+      container:{
+        center: true,
+        padding:{
+          default:"1rem",
+          sm:" 3rem"
+        }
+      }
+    },
+  },
+  plugins: [],
+}

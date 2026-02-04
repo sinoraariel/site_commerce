@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .gradient-main {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500;
+  }
+
+  .gradient-accent {
+    @apply bg-gradient-to-r from-primary-500 via-accent-500 to-secondary-500;
+  }
+
+  .gradient-soft {
+    @apply bg-gradient-to-br from-primary-200 to-secondary-400;
+  }
+}
