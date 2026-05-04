@@ -182,7 +182,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div style={BGimg}><img className='h-[20px]' src={BG}/></div>
+      <div style={BGimg}><img className='h-[5px]' src={BG}/></div>
     </div>
     </footer>
    

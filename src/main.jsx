@@ -1,4 +1,5 @@
 import { StrictMode } from 'react'
+import {CartProvider} from "./Context/CartContext"
 // import { SearchProvider } from "./Context/SearchContext";
 import React from "react"
 import { createRoot } from 'react-dom/client'
@@ -11,8 +12,10 @@ import "slick-carousel/slick/slick-theme.css";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+    <CartProvider>
     {/* <SearchProvider> */}
       <App/>
+    </CartProvider>
     {/* </SearchProvider> */}
     </BrowserRouter>
   </StrictMode>,

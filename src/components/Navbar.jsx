@@ -24,7 +24,7 @@ const Onglet =[
     id:4,
     name : "Contact",
     link: "/contact",
-  },
+  }, 
   
 ]
 const categorie = [
@@ -38,23 +38,19 @@ const categorie = [
     name : "Femmes",
     Link: "femmes",
   },
-   {
-    id : 3,
-    name : "Enfant",
-    Link: "enfant",
-  },
+   
   {
-    id : 4,
+    id : 3,
     name : "Bijoux",
     Link: "bijoux",
   },
   {
-    id : 5,
+    id : 4,
     name : "Perruques ",
     Link: "perruques",
   },
   {
-    id : 6,
+    id : 5,
     name : "Maillots ",
     Link: "maillots",
   },

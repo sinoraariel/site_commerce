@@ -4,7 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import Layout from './MainLayout/Layout';
 import Contact from './Pages/Contact';
 import Panier from './Pages/Panier';
-import Homme from './Pages/Homme';
+import MenProduct from './Pages/MenProduct';
+import WomenProduct from './Pages/WomenProduct';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -26,7 +27,10 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='contact' element={<Contact/>}/>
           <Route  path='panier' element={<Panier/>}/>
-          <Route path='hommes' element={<Homme/>}/>
+          <Route path='hommes' element={<MenProduct/>}/>
+          <Route path='femmes' element={<WomenProduct/>}/>
+          
+
         </Route>
       </Routes>
     
