@@ -21,9 +21,10 @@ const WomenProducts = () => {
       {loading ? (
         <p className="text-neutral-500">Chargement...</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {products.map(product => (
             <ProductCard
+            
               key={product.id}
               product={product}
               onOpen={() => setSelectedProduct(product)}

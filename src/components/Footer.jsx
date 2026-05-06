@@ -29,10 +29,7 @@ const FooterLink = [
         title: "Mon Panier",
         link: "/panier",
     },
-    {
-        title: "Catégorie",
-        link: "/categorie",
-    },
+    
     {
         title: "Contact",
         link: "/contact",
