@@ -6,9 +6,11 @@ import Contact from './Pages/Contact';
 import Panier from './Pages/Panier';
 import MenProduct from './Pages/MenProduct';
 import WomenProduct from './Pages/WomenProduct';
-
+import Perruques from './Pages/Perruques';
+import Bijoux from './Pages/Bijoux';
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 function App() {
   React.useEffect(() => {
     AOS.init({
@@ -29,7 +31,8 @@ function App() {
           <Route  path='panier' element={<Panier/>}/>
           <Route path='hommes' element={<MenProduct/>}/>
           <Route path='femmes' element={<WomenProduct/>}/>
-          
+          <Route path='perruques' element={<Perruques/>}/>
+          <Route path='bijoux' element={<Bijoux/>}/>
 
         </Route>
       </Routes>

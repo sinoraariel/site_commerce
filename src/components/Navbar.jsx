@@ -49,11 +49,7 @@ const categorie = [
     name : "Perruques ",
     Link: "perruques",
   },
-  {
-    id : 5,
-    name : "Maillots ",
-    Link: "maillots",
-  },
+ 
   
 ]
 // const { searchTerm, setSearchTerm } = useContext(SearchContext);
@@ -90,21 +86,17 @@ const location = useLocation();
              </div>
              {/* search bar */}
               <div className='flex  justify-start items-center gap-4'>
-                    <div className='relative group  sm:block'>
-                        <input 
+                    <div className='relative group hidden md:block'>
+                    <input 
                         type="text"
-                        placeholder="search "
-                        // value={searchTerm}
-                        //  onChange={(e) => setSearchTerm(e.target.value)}
-                        className="w-[200px]  sm:w-[200px] group-hover:w-[300px] transition-all duration-300 
-                        rounded-full border border-gray-300 px-2 pY-1 focus:outline-none focus:border-1
+                        placeholder="search"
+                        className="w-[200px] group-hover:w-[300px] transition-all duration-300 
+                        rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1
                         hover:border-primary dark:border-gray-600 dark:bg-gray-800"
-                        />
-                        <IoSearch
-                        className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3"
-                        />
-                    </div>
-                
+                    />
+                    <IoSearch className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3" />
+              </div>
+                                
                 {/* order button */}
                 <button onClick={() => alert("Ordering not available  yet")}
                   className='flex  bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white
@@ -186,6 +178,20 @@ const location = useLocation();
           </div>
           {isMenuOpen && (
           <div className="lg:hidden  py-4 border-t border-neutral-200/20  bg-primary/0 backdrop-blur-md rounded-b-2xl shadow-xl animate-fade-in">
+            <div className='bottom-8 mt-8 relative group  sm:block'>
+                        <input 
+                        type="text"
+                        placeholder="search "
+                        // value={searchTerm}
+                        //  onChange={(e) => setSearchTerm(e.target.value)}
+                        className="w-[200px]   group-hover:w-[200px] transition-all duration-300 
+                        rounded-full border border-gray-300 px-2 pY-1 focus:outline-none focus:border-1
+                        hover:border-primary dark:border-gray-600 dark:bg-gray-800"
+                        />
+                        <IoSearch
+                        className="text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 left-40 "
+                        />
+                    </div>
             <nav className="flex flex-col  space-y-1">
               {Onglet.map((item) => (
                 <NavLink
@@ -231,6 +237,7 @@ const location = useLocation();
            </li>
              
             </nav>
+            
           </div>
         )}
     </div>

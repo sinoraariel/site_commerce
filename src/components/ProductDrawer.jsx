@@ -16,7 +16,7 @@ const ProductDrawer = ({ product, onClose }) => {
         <button onClick={onClose} className="text-neutral-500 hover:text-neutral-900 dark:hover:text-white mb-4">
           ✕
         </button>
-        <img src={product.image_url} alt={product.nom} className="w-full h-64 object-cover rounded-lg" />
+        <img src={product.image_url} alt={product.nom} className="w-full h-74 object-cover rounded-lg" />
         <h2 className="text-2xl font-bold mt-4 text-neutral-900 dark:text-white">{product.nom}</h2>
         <p className="text-neutral-600 dark:text-neutral-300 mt-2">{product.description}</p>
         <p className="text-xl font-bold text-primary mt-4">{product.prix.toLocaleString()} FCFA</p>

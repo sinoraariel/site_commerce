@@ -6,7 +6,7 @@ const ProductCard = ({ product, onOpen }) => {
       <img
         src={product.image_url}
         alt={product.nom}
-        className="w-full h-44  sm:h-44 md:h-52 lg:h-94 object-cover rounded-t-xl"
+        className="w-full h-48  sm:h-44 md:h-52 lg:h-94 object-cover rounded-t-xl"
       />
       <button
         onClick={onOpen}
