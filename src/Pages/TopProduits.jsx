@@ -9,37 +9,39 @@ import {GrSecure} from "react-icons/gr"
 import {IoFastFood} from "react-icons/io5"
 import {GiFoodTruck} from "react-icons/gi"
 import { MdSystemSecurityUpdateGood } from "react-icons/md";
+import { useNavigate } from 'react-router-dom'
 const ProductsData=[
    {
       id:1,
       img: Img4,
       title:"Vêtements pour homme",
       description: "Des habits pour hommes disponibles, toutes les tailles et d'une qualité incroyable",
-      url:'#'
+      url:'/hommes'
     },
    {
       id:2,
       img: Img6,
       title:"Vêtements pour femme",
       description: "Des habits pour femmes disponibles, toutes les tailles et d'une qualité incroyable ",
-      url:'#'
+      url:'/femmes'
     },
     {
       id:3,
       img: Img3,
       title:"Ensembles enfants",
       description: "Des habits pour enfant allant de 1 à 12 ans de tout type de très bonne qualité",
-      url:'#'
+      url:'/hommes'
     },
     {
       id:4,
       img: Img8,
       title:"Maillot des pays et clubs",
       description: "Des maillots de tout clubs et des pays de votre choix avec possibilité de flocage",
-      url:'#'
+      url:'/hommes'
     },
 ]
 const TopProduits = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <div className='container'>
@@ -50,19 +52,19 @@ const TopProduits = () => {
             <p data-aos="fade-up" className='text-xs text-gray-600 dark:text-white'>Un catalogue très diversifié dans le seul et unique but de vous satisfaire, vous nos clients.</p>
         </div>
         {/* Body section */}
-        <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-20 md:gap-5 pmace-items-center'>
+        <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-5 place-items-center'>
           {ProductsData.map((data) => {
           return(
             <div key={data.id}
             data-aos="zoom-in" 
             className='rounded-2xl hover:bg-accent-500 bg-white dark:bg-gray-800 hover:bg-black/80
             dark:hover:bg-accent-500 hover:text-white relative shadow-xl duration-300 transition-all
-            group w-[250px] hover:scale-105'
+            group w-full max-w-[250px] hover:scale-105'
             >
               {/* image section */}
               <div className='flex justify-center'>
                 <img src={data.img} alt='' 
-                className='h-[290px] w-[200px] block mx-auto transform duration-300 drop-shadow-md '
+                className='h-[200px] w-full object-cover block mx-auto transform duration-300 drop-shadow-md rounded-t-2xl'
                 />
               </div>
               {/* details section */}
@@ -79,12 +81,13 @@ const TopProduits = () => {
                   {data.title}
                 </h1>
                 <p className='text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2'>{data.description}</p>
-                <button className='bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full
-                mt-4 group-hover:bg-white group-hover:text-primary  dark:hover:border dark:hover:border-white mb-5'
-                // onClick={data.url}
-                >
-                  Voir Plus
-                </button>
+                <button
+                onClick={() => navigate(data.url)}
+                className='bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full
+                mt-4 group-hover:bg-white group-hover:text-primary dark:hover:border dark:hover:border-white mb-5'
+              >
+                Voir Plus
+              </button>
               </div>
             </div>
           )}

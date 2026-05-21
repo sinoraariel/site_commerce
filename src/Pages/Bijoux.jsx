@@ -2,24 +2,26 @@ import React, { useState } from 'react'
 import ProductCard from "../components/ProductCard"
 import ProductDrawer from "../components/ProductDrawer"
 import { useProducts } from "../hooks/useProducts"
+import { useTranslation } from 'react-i18next'
 
 const Bijoux = () => {
   const { products, loading } = useProducts("bijoux")
   const [selectedProduct, setSelectedProduct] = useState(null)
-
+  const { t } = useTranslation()
   return (
     <div className="min-h-screen bg-neutral-50 dark:bg-neutral-900 px-6 py-12">
       <section className="mt-20 mb-12">
         <h1 className="text-4xl font-bold text-neutral-900 dark:text-white">
-          Bijoux & Montres
+          {t('Bijoux & Montres')}
+           {/* // ← 3. Utilise t dans le JSX */}
         </h1>
         <p className="text-neutral-600 dark:text-neutral-300 mt-2">
-          Des bijoux et montres élégants pour toutes les occasions.
+          {t(' Des produits de qualité sélectionnés avec soin.')}
         </p>
       </section>
 
       {loading ? (
-        <p className="text-neutral-500">Chargement...</p>
+        <p className="text-neutral-500">{t('chargement')}</p>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
           {products.map(product => (

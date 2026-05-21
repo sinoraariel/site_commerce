@@ -129,9 +129,8 @@ const Contact = () => {
       {/* Hero Section */}
       <section data-aos="zoom-out"
                 data-aos-duration="500"
-                data-aos-once="true" className="relative  dark:text-white relative overflow-hidden h-[400px] 
-      sm:min-h-[600px] bg-gray-100 flex justify-center 
-      items-center dark:bg-gray-950 dark:text-white duration-200">
+                data-aos-once="true" 
+                className="relative dark:text-white overflow-hidden min-h-[400px] sm:min-h-[500px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 duration-200 mt-16 sm:mt-20 pt-8">
                   <div className='h-[700px] w-[700px] bg-primary/70
       absolute -top-1/2 right-0 rounded-3xl rotate-45 -z-9'></div>
         <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
@@ -334,7 +333,7 @@ const Contact = () => {
             {/* Sidebar */}
             <div className="space-y-8">
               {/* Quick Contact */}
-              <div data-aos="fade-up" className="w-[400px] rounded-3xl p-8 border dark:border-gray-600 border-primary/100">
+              <div data-aos="fade-up" className="w-full rounded-3xl p-6 sm:p-8 border dark:border-gray-600 border-primary/100">
                 <h3 className="dark:text-white text-2xl font-bold text-neutral-900 mb-6">
                   Contact rapide
                 </h3>

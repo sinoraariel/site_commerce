@@ -20,17 +20,17 @@ React.useEffect(() => {
     <div>
       <img
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      src={Light}
+      src={Dark}
       alt='Light'
-      className={`w-14 cursor-pointer top-9 absolute  ${
+      className={`w-14 cursor-pointer mt-2  absolute  ${
         theme === "dark" ? "opacity-0" : "opacity-100"}
         transition-all duration-300`}
       />
        <img
        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      src={Dark}
+      src={Light}
       alt='Dark'
-      className={`w-14 cursor-pointer top-9  z-10 ${
+      className={`w-14 cursor-pointer mt-4   ${
         theme === "light" ? "opacity-0" : "opacity-100"}
         transition-all duration-300`}
       />

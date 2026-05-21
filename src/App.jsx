@@ -10,6 +10,7 @@ import Perruques from './Pages/Perruques';
 import Bijoux from './Pages/Bijoux';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Search from './Pages/Search';
 
 function App() {
   React.useEffect(() => {
@@ -33,7 +34,7 @@ function App() {
           <Route path='femmes' element={<WomenProduct/>}/>
           <Route path='perruques' element={<Perruques/>}/>
           <Route path='bijoux' element={<Bijoux/>}/>
-
+          <Route path="/search" element={<Search />} />
         </Route>
       </Routes>
     
