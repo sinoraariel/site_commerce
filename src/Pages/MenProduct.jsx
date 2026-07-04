@@ -22,7 +22,7 @@ const MenProducts = () => {
       </section>
 
       {loading ? (
-        <p className="text-neutral-500">{t('chargement')}</p>
+        <p className="text-neutral-500">chargement</p>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
           {products.map(product => (

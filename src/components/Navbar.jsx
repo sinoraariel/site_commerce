@@ -57,7 +57,7 @@ const Navbar = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled
-        ? 'bg-primary/100 backdrop-blur-md shadow-lg border-b border-neutral-200/50'
+        ? 'bg-primary/700 backdrop-blur-md shadow-lg border-b border-neutral-200/50'
         : 'bg-transparent'
     }`}>
       <div className='shadow-md bg-white dark:bg-gray-700 dark:text-white duration-200 relative z-40'>
@@ -125,7 +125,7 @@ const Navbar = () => {
                   to={data.link}
                   className={`inline-block hover:text-primary px-4 dark:text-white dark:hover:text-primary duration-200 ${
                     isActive(data.link)
-                      ? 'text-black bg-primary/20 rounded-md hover:text-black'
+                      ? 'text-black bg-primary/40 rounded-md hover:text-black'
                       : 'text-black hover:text-primary-600'
                   }`}
                 >

@@ -11,35 +11,37 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
-        primary:"#fea928",
-        secondary:"#ed8900",
-        neutral: {
-          50: '#fafafa',
-          100: '#f5f5f5',
-          200: '#e5e5e5',
-          300: '#d4d4d4',
-          400: '#a3a3a3',
-          500: '#737373',
-          600: '#525252',
-          700: '#404040',
-          800: '#262626',
-          900: '#171717',
-          950: '#0a0a0a',
+      colors: {
+          primary: "#D4A017",      // or principal du logo
+          secondary: "#8B6914",    // or foncé / bronze
+
+          neutral: {
+            50:  '#fafaf7',
+            100: '#f5f0e8',
+            200: '#e8dcc8',
+            300: '#d4c4a0',
+            400: '#b8a070',
+            500: '#8B7A50',
+            600: '#6B5C35',
+            700: '#4A3F24',
+            800: '#2E2618',
+            900: '#1A1508',
+            950: '#0D0A04',
+          },
+
+          accent: {
+            50:  "#fefce8",
+            100: "#fef9c3",
+            200: "#fef08a",
+            300: "#fde047",
+            400: "#F5C842",   // or clair du logo
+            500: "#D4A017",   // or principal
+            600: "#B8860B",
+            700: "#8B6914",   // bronze
+            800: "#6B5010",
+            900: "#4A370A",
+          },
         },
-        accent: {
-        50:  "#ecfdf5",
-        100: "#d1fae5",
-        200: "#a7f3d0",
-        300: "#6ee7b7",
-        400: "#34d399",
-        500: "#10b981", // couleur principale accent
-        600: "#059669",
-        700: "#047857",
-        800: "#065f46",
-        900: "#064e3b",
-      },
-      },
       fontFamily: {
       serifAlt: ['"DM Serif Display"', 'serif'],
     },
